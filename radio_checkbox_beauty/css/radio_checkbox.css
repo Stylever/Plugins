@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*radio-checkbox*/
+.radio-checkbox {
+    margin: 20px;    
+}
+.checkboxs {
+    margin-top: 20px;
+}
+
+/* 图片显示*/
+.radioLabel i {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/blue.png) -120px 0 no-repeat;
+}
+.radioChecked i {
+	background-position: -168px 0;
+}
+
+.checkboxLabel i {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/blue.png) 0 0 no-repeat;
+}
+.checkboxChecked i {
+	background-position: -48px 0;
+}
+
+/*radio-checkbox-mobile*/
+.mobile .radios {
+    display: -webkit-box;
+}
+.mobile .radioInput {
+    position: relative;
+    display: -webkit-box;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.mobile .radioInput::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadcdf;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.mobile .radioInput::after {
+    content: '';
+    z-index: 2;
+}
+.mobile .radioInput:checked::after {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #34aadc;
+    border-radius: 50%;
+}
+
+.mobile .checkboxs {
+    display: -webkit-box;
+    margin-top: 20px;
+}
+.mobile .checkboxInput {
+    position: relative;
+    display: -webkit-box;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.mobile .checkboxInput::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadcdf;
+    box-sizing: border-box;
+}
+.mobile .checkboxInput::after {
+    content: '';
+    z-index: 2;
+}
+.mobile .checkboxInput:checked::after {
+    display: block;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/blue.png) -49px -1px no-repeat;
+}
